@@ -1,9 +1,9 @@
 def run():
     my_list = [1, "Hello", True, 4.5]
-    my_dict = {"firstname": "Facundo", "lastname": "García"}
+    my_dict = {"firstname": "Adrian", "lastname": "Gonzalez"}
 
     super_list = [
-        {"firstname": "Facundo", "lastname": "García"},
+        {"firstname": "Adrian", "lastname": "GOnzalez"},
         {"firstname": "Miguel", "lastname": "Rodriguez"},
         {"firstname": "Pablo", "lastname": "Trinidad"},
         {"firstname": "Susana", "lastname": "Martinez"},
@@ -15,6 +15,10 @@ def run():
         "integer_nums": [-1, -2, 3, 0, 1],
         "floating_nums": [1.1, 4.55, 6.43],
     }
+
+for key, value in super_list.items():
+    print(key, "-", value)
+
 
 if __name__ == '__main__':
     run()
